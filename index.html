@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+      integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <label for="mainIngredient">Enter Main Ingredient:</label>
+    <input type="text" id="mainIngredient" placeholder="e.g., chicken" />
+    <br />
+    <label for="foodCategory">Enter your desired Category;</label>
+    <select id="foodCategory">
+      <option value="">Any Category</option>
+      <option value="Beef">Beef</option>
+      <option value="Chicken">Chicken</option>
+      <option value="Dessert">Dessert</option>
+    </select>
+    <br />
+    <label for="foodRegion">Enter your desired region;</label>
+    <select id="foodRegion">
+      <option value="">Any Category</option>
+      <option value="American">American</option>
+      <option value="Chinese">Chinese</option>
+      <option value="Indian">Indian</option>
+    </select>
+    <br />
+    <button onclick="generateMeal()">Generate Meal</button>
+    <br />
+
+    <label for="drinkCategory">Enter Drink Category:</label>
+    <select id="drinkCategory">
+      <option value="">Any Category</option>
+      <option value="Cocktail">Cocktails</option>
+      <option value="Shake">Shaken drinks</option>
+      <option value="Shot">Shots!</option>
+    </select>
+
+    <br />
+    <label for="drinkGlass">Enter your desired Glass;</label>
+    <select id="drinkGlass">
+      <option value="">Any Category</option>
+      <option value="Highball_glass">Highball Glasses</option>
+      <option value="Cocktail_glass">Cocktail Glasses</option>
+      <option value="Champagne_flute">Champagne flutes</option>
+    </select>
+    <br />
+    <label for="mainDrinkIngredient">Enter Main Ingredient:</label>
+    <input type="text" id="mainDrinkIngredient" placeholder="e.g., Scotch" />
+    <br />
+    <button onclick="generateDrink()">Generate Drink</button>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
